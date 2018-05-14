@@ -1,0 +1,9 @@
+<h1>Registration</h1>
+<form method="post" action="/register">
+    <input type="text" name="user" value="" placeholder="Username" required><br>
+    <input type="password" name="pass" value="" placeholder="Password" required><br>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button>Register</button>
+</form>
+
+<br><span>Already have an account? Log in <a href="/login">here</a>!</span>

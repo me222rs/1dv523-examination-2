@@ -1,0 +1,11 @@
+<h2>This is the logged in view of the snippets</h2>
+<ul>
+    <span>Logged in as {{user}}. </span><a href="/logout">Log out?</a>
+    {{#each snippets}}
+    <div>
+      <a href="/snippet/post/{{_id}}"><h3>{{title}}</h3></a><br>
+      <span>Posted by: {{userName}}</span><br>
+      <span>________________________________</span>
+    </div>
+    {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+<h2>Showing post</h2>
+<ul>
+    <div>
+        <span>Posted by: {{userName}}</span><br>
+        <div id="editor">{{body}}</div>
+        {{#if loggedInUserIsSame}}
+        <a href="/snippet/delete/{{_id}}">Delete</a> <a href="/snippet/update/{{_id}}">Update</a><br>
+        {{/if}}
+    </div>
+</ul>

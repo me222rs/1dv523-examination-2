@@ -1,0 +1,6 @@
+<form method="post" action="/snippet/delete/{{_id}}">
+    <span>Are you sure you want to delete?</span>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button>Yes, delete it</button>
+    <a href="/">Cancel</a>
+</form>

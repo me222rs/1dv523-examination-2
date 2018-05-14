@@ -1,0 +1,9 @@
+<h2>Create new snippet</h2>
+<form method="post" action="/snippet">
+    <!--<textarea rows="5" cols="50" name="content" required="true" minlength="1" maxlength="500" autofocus="true"></textarea><br>-->
+    <div id="editor"></div>
+    <input name="title" required="true" minlength="1" maxlength="30"></input>
+    <input name="content" type="hidden" required="true" minlength="1" maxlength="500"></input>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button type="submit">Post snippet</button>
+</form>
